@@ -12,4 +12,4 @@ async function getMe() {
   return response;
 }
 
-setInterval(() => getMe(), 120000);
+setInterval(() => getMe(), 10800000);
