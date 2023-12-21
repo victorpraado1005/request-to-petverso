@@ -7,7 +7,7 @@ const port = process.env.PORT || 3002;
 app.listen(port, () => console.log('Servidor rodando...'));
 
 async function getMe() {
-  const response = fetch('http://localhost:3001');
+  const response = fetch(process.env.REACT_APP_API_URL);
 
   return response;
 }
